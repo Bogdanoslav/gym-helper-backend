@@ -14,7 +14,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class HrSpecialist extends User{
+public class HrSpecialist extends Person {
     @Column(name = "experience")
     private Integer experience;
 }

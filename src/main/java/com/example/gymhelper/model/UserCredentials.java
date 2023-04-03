@@ -24,7 +24,7 @@ public class UserCredentials implements UserDetails {
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id")
     @MapsId
-    private User user;
+    private Person person;
 
     @Column(name = "username")
     private String username;

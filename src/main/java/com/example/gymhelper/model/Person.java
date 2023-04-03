@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User extends BaseEntity {
+public class Person extends BaseEntity {
     @Column(name = "first_name")
     private String firstName;
 
@@ -38,7 +38,7 @@ public class User extends BaseEntity {
     @Column(name = "start_day")
     private LocalDate startDay;
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "person", cascade = CascadeType.ALL)
     @JsonIgnore
     private UserCredentials userCredentials;
 }

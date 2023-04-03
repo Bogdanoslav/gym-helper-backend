@@ -8,18 +8,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 @Entity
 @Table(name = "manager")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Manager extends User{
+public class Manager extends Person {
     @Column(name = "experience")
     private Integer experience;
-
-    @Column(name = "qualifications")
-    private String qualifications;
 }

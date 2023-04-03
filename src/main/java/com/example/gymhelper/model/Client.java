@@ -6,15 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 @Entity
 @Table(name = "client")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Client extends User {
+public class Client extends Person {
 
     @Column(name = "health_problems")
     private String healthProblems;

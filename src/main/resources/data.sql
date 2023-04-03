@@ -12,8 +12,8 @@ INSERT into user_credentials (id, username, password) VALUES
 (4, 'Clint', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy'),
 (5, 'Helen', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy');
 
-INSERT INTO manager (id, qualifications, experience) VALUES
-(1, 'CPR, AED', 5);
+INSERT INTO manager (id, experience) VALUES
+(1, 5);
 
 INSERT INTO trainer (id, qualifications, experience) VALUES
 (2,'CPR, AED', 5);
