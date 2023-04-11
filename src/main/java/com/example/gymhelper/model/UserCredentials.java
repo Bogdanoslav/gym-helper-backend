@@ -7,6 +7,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -17,14 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserCredentials implements UserDetails {
-    @Id
-    private Long id;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id")
-    @MapsId
-    private Person person;
+public class UserCredentials extends BaseEntity implements UserDetails {
 
     @Column(name = "username")
     private String username;
@@ -32,19 +26,19 @@ public class UserCredentials implements UserDetails {
     @Column(name = "password")
     private String password;
 
-    @ElementCollection(fetch = FetchType.EAGER, targetClass = ERole.class)
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
-    @Column(name = "role", nullable = false)
     @Enumerated(EnumType.STRING)
-    private List<ERole> roles;
+    private ERole role;
 
-    public List<ERole> getRoles() {
-        return roles;
-    }
+    @OneToOne(mappedBy = "userCredentials")
+    private Client client;
+
+    @OneToOne(mappedBy = "userCredentials")
+    private Employee employee;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return roles.stream().map(ERole -> new SimpleGrantedAuthority(ERole.name())).toList();
+        return Collections.singletonList(new SimpleGrantedAuthority(role.name()));
     }
 
     @Override

@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.catalina.Role;
 
 import java.util.List;
 
@@ -13,6 +14,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthenticationResponse {
-    private List<ERole> roles;
+    private ERole role;
     private String token;
 }

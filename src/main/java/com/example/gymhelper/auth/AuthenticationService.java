@@ -3,18 +3,12 @@ package com.example.gymhelper.auth;
 import com.example.gymhelper.config.JwtService;
 import com.example.gymhelper.model.UserCredentials;
 import com.example.gymhelper.repo.UserCredentialsRepository;
-import com.example.gymhelper.repo.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -35,11 +29,11 @@ public class AuthenticationService {
 
         return AuthenticationResponse.builder()
                 .token(jwtToken)
-                .roles(userCredentials.getRoles().stream().toList())
+                .role(userCredentials.getRole())
                 .build();
     }
 
-    private void setAuthentication(String username, String password){
+    private void setAuthentication(String username, String password) {
         Authentication authentication = authManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         username,

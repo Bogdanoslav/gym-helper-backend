@@ -1,44 +1,43 @@
-INSERT INTO person (first_name, last_name, email, birthday, phone, start_day, about) VALUES
-('Dave', 'Davinsky', 'dave@mail.com', '1994-10-27', '+380936360212', '1994-10-27', 'About'),
-('Timur', 'Trenbalonsky', 'tren@mail.com', '1994-10-27', '+380936360212', '1994-10-27', 'About'),
-('Pawel', 'Preparatov', 'tren@mail.com', '1994-10-27', '+380936360212', '1994-10-27', 'About'),
-('Clint', 'Eastwood', 'tren@mail.com', '1994-10-27', '+380936360212', '1994-10-27', 'About'),
-('Helen', 'Reebokuva', 'tren@mail.com', '1994-10-27', '+380936360212', '1994-10-27', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Ryann', 'Leathart', 'Female', 'rleathart0@pen.io', '392-249-4540', '5/11/1982', 16, 'QAC, CDA', 'Trainer', '5/30/2000', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Aline', 'McTavy', 'Female', 'amctavy1@vk.com', '140-910-6769', '10/23/1998', 16, 'QAC, CDA', 'Paramedic', '11/21/2013', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Floria', 'Kays', 'Female', 'fkays2@homestead.com', '888-957-7826', '2/15/1981', 16, 'QAC, CDA', 'Trainer', '11/19/2021', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Lavinie', 'Badsworth', 'Female', 'lbadsworth3@amazon.com', '530-506-4515', '8/16/1984', 13, 'QAC, CDA', 'Paramedic', '12/19/2020', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Arel', 'MacGragh', 'Male', 'amacgragh4@ihg.com', '349-285-4097', '10/17/1987', 14, 'QAC, CDA', 'Manager', '9/4/2001', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Louisette', 'Paunton', 'Agender', 'lpaunton5@spotify.com', '200-806-6515', '12/13/1998', 14, 'QAC, CDA', 'Paramedic', '5/26/2020', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Berkeley', 'Moneti', 'Male', 'bmoneti6@dion.ne.jp', '948-949-9387', '6/23/1993', 16, 'QAC, CDA', 'Manager', '2/25/2009', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Marten', 'Campa', 'Male', 'mcampa7@nydailynews.com', '325-813-3787', '9/12/1984', 19, 'QAC, CDA', 'Manager', '2/28/2021', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Hedwig', 'Roder', 'Female', 'hroder8@goodreads.com', '526-644-3194', '12/9/1986', 19, 'QAC, CDA', 'Paramedic', '8/20/2008', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Becka', 'Safont', 'Female', 'bsafont9@webs.com', '872-494-7363', '1/15/1986', 6, 'QAC, CDA', 'Trainer', '5/18/2002', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Celestyna', 'Maric', 'Female', 'cmarica@ox.ac.uk', '740-894-9143', '1/31/1995', 8, 'QAC, CDA', 'Paramedic', '7/14/2005', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Rodger', 'Rey', 'Male', 'rreyb@omniture.com', '766-799-2291', '6/21/1984', 6, 'QAC, CDA', 'Trainer', '8/7/2020', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Harv', 'Grayham', 'Male', 'hgrayhamc@vk.com', '351-295-7021', '12/27/1982', 2, 'QAC, CDA', 'Paramedic', '12/7/2008', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Doreen', 'Umbers', 'Genderqueer', 'dumbersd@newyorker.com', '128-615-3334', '10/25/1984', 18, 'QAC, CDA', 'Manager', '11/4/2009', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Alisa', 'Grocock', 'Female', 'agrococke@ihg.com', '118-312-5196', '8/15/1990', 15, 'QAC, CDA', 'Paramedic', '4/24/2009', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Kacey', 'Crass', 'Female', 'kcrassf@buzzfeed.com', '223-998-1758', '8/31/1987', 11, 'QAC, CDA', 'Manager', '2/24/2002', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Saundra', 'Westphalen', 'Male', 'swestphaleng@altervista.org', '419-282-0638', '3/10/1989', 18, 'QAC, CDA', 'Manager', '2/19/2010', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Laural', 'Sparkwell', 'Female', 'lsparkwellh@discuz.net', '900-995-9707', '1/19/1981', 11, 'QAC, CDA', 'Paramedic', '9/5/2007', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Mendel', 'Bagnold', 'Male', 'mbagnoldi@wunderground.com', '116-879-8540', '4/28/1985', 18, 'QAC, CDA', 'Trainer', '8/20/2005', 'About');
+insert into employee (first_name, last_name, gender, email, phone, birthday, experience, qualifications, employee_type, hire_date, about) values ('Cort', 'Bentz', 'Male', 'cbentzj@a8.net', '537-238-3230', '11/19/1996', 11, 'QAC, CDA', 'Paramedic', '9/27/2003', 'About');
 
-INSERT into user_credentials (id, username, password) VALUES
-(1, 'Dave', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy'),
-(2, 'Timur', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy'),
-(3, 'Pawel', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy'),
-(4, 'Clint', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy'),
-(5, 'Helen', '$2a$10$i0m24FWJFDmqktpy.YbezeVvcKwm2u/JmwnA6FkZXqPzzAnAFonJy');
 
-INSERT INTO manager (id, experience) VALUES
-(1, 5);
+insert into user_credentials (username, password, role) values ('gspinella0', '9ztMcLSmtM', 'TRAINER');
+insert into user_credentials (username, password, role) values ('bmaccumiskey1', '7KYOIOZ8HK', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('sfarrans2', 'TvMeR0w8', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('aglinde3', 'Oz6wWbu2hn', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('fbelward4', 'xOuIcJXtI2OC', 'TRAINER');
+insert into user_credentials (username, password, role) values ('nbigglestone5', 'VO53Nf', 'MANAGER');
+insert into user_credentials (username, password, role) values ('ctroppmann6', 'd0YPykNl', 'MANAGER');
+insert into user_credentials (username, password, role) values ('rtwaite7', 'kpid2UX', 'MANAGER');
+insert into user_credentials (username, password, role) values ('rearly8', 'WuaLVqlgF8f', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('otimmermann9', 'u7yt5Juu3ew', 'TRAINER');
+insert into user_credentials (username, password, role) values ('chritzkoa', '3bzMcPn', 'MANAGER');
+insert into user_credentials (username, password, role) values ('lbaserb', 'IClUk7', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('pmcspirronc', 'OdwEqR', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('tnuzzid', 'HoqREej', 'MANAGER');
+insert into user_credentials (username, password, role) values ('bgasquoinee', 'ge1RdBAWcN', 'MANAGER');
+insert into user_credentials (username, password, role) values ('emacneilleyf', 'yyStIEtO', 'TRAINER');
+insert into user_credentials (username, password, role) values ('bowttrimg', 'qnHbccvWllE', 'TRAINER');
+insert into user_credentials (username, password, role) values ('kronischh', 'gaBhEWeQFd', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('slefeuvrei', 'QhldsRVV', 'PARAMEDIC');
+insert into user_credentials (username, password, role) values ('ldarnellj', 'apTFV1XYL0o4', 'PARAMEDIC');
 
-INSERT INTO trainer (id, qualifications, experience) VALUES
-(2,'CPR, AED', 5);
-
-INSERT INTO paramedic (id, qualifications, experience) VALUES
-(3,'CPR, AED', 5);
-
-INSERT INTO client (id, health_problems, trainer_id) VALUES
-(4,'Heart disease, leg injury', 2);
-
-INSERT INTO hr_specialist (id, experience) VALUES
-(5,4);
-
-INSERT INTO user_role (user_id, role) VALUES
-(1,'USER'),
-(1,'MANAGER'),
-
-(2,'USER'),
-(2,'TRAINER'),
-
-(3,'USER'),
-(3,'PARAMEDIC'),
-
-(4,'USER'),
-(4,'CLIENT'),
-
-(5,'USER'),
-(5,'HR');

@@ -5,17 +5,20 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "client")
+@Table(name = "employee")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "employee_type")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Client extends BaseEntity{
+public class Employee extends BaseEntity {
     @Column(name = "first_name")
     private String firstName;
 
@@ -34,21 +37,20 @@ public class Client extends BaseEntity{
     @Column(name = "birthday")
     private LocalDate birthday;
 
-    @Column(name = "health_problems")
-    private String healthProblems;
+    @Column(name = "experience")
+    private Integer experience;
 
-    @ManyToOne
-    @JoinColumn(name = "trainer_id")
-    private Trainer trainer;
+    @Column(name = "qualifications")
+    private String qualifications;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_credentials_id")
     private UserCredentials userCredentials;
 
-    @Column(name = "start_date")
-    private LocalDate start_date;
+    @Column(name = "hire_date")
+    private LocalDate hireDate;
 
     @Column(name = "about")
     private String about;
-}
 
+}

@@ -5,6 +5,4 @@ public enum ERole {
     TRAINER,
     PARAMEDIC,
     CLIENT,
-    USER,
-    HR
 }
